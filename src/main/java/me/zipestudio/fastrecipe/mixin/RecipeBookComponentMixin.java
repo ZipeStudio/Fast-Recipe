@@ -24,23 +24,23 @@ public class RecipeBookComponentMixin {
     @Final
     private RecipeBookPage recipeBookPage;
 
-    //? if >=1.21.10 {
-    /*@Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/recipebook/RecipeBookComponent;isOffsetNextToMainGUI()Z"), method = "mouseClicked")
-    private void init(net.minecraft.client.input.MouseButtonEvent mouseButtonEvent, boolean bl, CallbackInfoReturnable<Boolean> cir) {
-    *///?} else {
+    //? if >=1.21.9 {
     @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/recipebook/RecipeBookComponent;isOffsetNextToMainGUI()Z"), method = "mouseClicked")
+    private void init(net.minecraft.client.input.MouseButtonEvent mouseButtonEvent, boolean bl, CallbackInfoReturnable<Boolean> cir) {
+    //?} else {
+    /*@Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screens/recipebook/RecipeBookComponent;isOffsetNextToMainGUI()Z"), method = "mouseClicked")
     private void init(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
-        //?}
+        *///?}
 
         RecipeCollection lastClickedResults = this.recipeBookPage.getLastClickedRecipeCollection();
 
         //? if >=1.21.2 {
-        /*net.minecraft.world.item.crafting.display.RecipeDisplayId
-         *///?} elif >=1.20.2 {
+        net.minecraft.world.item.crafting.display.RecipeDisplayId
+         //?} elif >=1.20.2 {
         /*net.minecraft.world.item.crafting.RecipeHolder<?>
                 *///?} else {
-                net.minecraft.world.item.crafting.Recipe<?>
-                 //?}
+                /*net.minecraft.world.item.crafting.Recipe<?>
+                 *///?}
                 lastClickedRecipe = this.recipeBookPage.getLastClickedRecipe();
 
         if (lastClickedResults == null) {
@@ -51,7 +51,7 @@ public class RecipeBookComponentMixin {
         }
 
         //? if >=1.21.2 {
-        /*net.minecraft.util.context.ContextMap parameters = net.minecraft.world.item.crafting.display.SlotDisplayContext.fromLevel(Objects.requireNonNull(Minecraft.getInstance().level));
+        net.minecraft.util.context.ContextMap parameters = net.minecraft.world.item.crafting.display.SlotDisplayContext.fromLevel(Objects.requireNonNull(Minecraft.getInstance().level));
         List<Item> result = lastClickedResults.getSelectedRecipes(net.minecraft.client.gui.screens.recipebook.RecipeCollection.CraftableStatus.CRAFTABLE)
                 .stream()
                 .map(net.minecraft.world.item.crafting.display.RecipeDisplayEntry::display)
@@ -60,22 +60,22 @@ public class RecipeBookComponentMixin {
                 .flatMap(List::stream)
                 .map(ItemStack::getItem)
                 .toList();
-        *///?} elif >=1.20.2 {
+        //?} elif >=1.20.2 {
         /*List<Item> result = List.of(lastClickedRecipe.value().getResultItem(lastClickedResults.registryAccess()).getItem());
         *///?} else {
-        List<Item> result = List.of(lastClickedRecipe.getResultItem(/*? >=1.19.4 {*/ /*lastClickedResults.registryAccess() *//*?}*/).getItem());
-         //?}
+        /*List<Item> result = List.of(lastClickedRecipe.getResultItem(/^? >=1.19.4 {^/ lastClickedResults.registryAccess() /^?}^/).getItem());
+         *///?}
 
         if (result.isEmpty()) {
             return;
         }
 
         boolean controlDown =
-        //? if >=1.21.10 {
-        /*mouseButtonEvent.hasControlDown();
-        *///?} else {
-        Screen.hasControlDown();
-        //?}
+        //? if >=1.21.9 {
+        mouseButtonEvent.hasControlDown();
+        //?} else {
+        /*Screen.hasControlDown();
+        *///?}
 
         if (!controlDown || !FSClient.canStartWaiting(result)) {
             return;
