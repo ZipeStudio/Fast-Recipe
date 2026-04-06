@@ -2,7 +2,7 @@ package me.zipestudio.fastrecipe.entrypoint;
 
 //? if fabric {
 
-import me.zipestudio.fastrecipe.FSServer;
+/*import me.zipestudio.fastrecipe.FSServer;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -14,31 +14,31 @@ public class CommonEntrypoint implements ModInitializer {
 	}
 }
 
-//?} elif neoforge {
+*///?} elif neoforge {
 
-/*import me.zipestudio.frb.FRBServer;
+import me.zipestudio.fastrecipe.FSServer;
 import net.neoforged.fml.common.Mod;
 
-@Mod(FRBServer.MOD_ID)
+@Mod(FSServer.MOD_ID)
 public class CommonEntrypoint {
 
 	public CommonEntrypoint() {
-		FRBServer.onInitialize();
+		FSServer.onInitialize();
 	}
 
 }
 
-*///?} elif forge {
-/*import me.zipestudio.frb.FRBServer;
+//?} elif forge {
+/*import me.zipestudio.fastrecipe.FSServer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(FRBServer.MOD_ID)
+@Mod(FSServer.MOD_ID)
 public class CommonEntrypoint {
 
 	public CommonEntrypoint() {
-		FRBServer.onInitialize();
+		FSServer.onInitialize();
 		DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> ClientEntrypoint::onInitializeClient);
 	}
 
