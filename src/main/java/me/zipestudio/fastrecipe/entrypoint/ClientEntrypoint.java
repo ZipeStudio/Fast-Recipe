@@ -2,7 +2,7 @@ package me.zipestudio.fastrecipe.entrypoint;
 
 //? if fabric {
 
-/*import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 
 import me.zipestudio.fastrecipe.client.FSClient;
 
@@ -14,8 +14,8 @@ public class ClientEntrypoint implements ClientModInitializer {
 	}
 }
 
-*///?} elif neoforge {
-import me.zipestudio.fastrecipe.FSServer;
+//?} elif neoforge {
+/*import me.zipestudio.fastrecipe.FSServer;
 import me.zipestudio.fastrecipe.client.FSClient;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.ModContainer;
@@ -30,7 +30,7 @@ public class ClientEntrypoint {
 
 }
 
-//?} elif forge {
+*///?} elif forge {
 /*import me.zipestudio.fastrecipe.client.FSClient;
 import net.minecraftforge.fml.ModLoadingContext;
 

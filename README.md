@@ -40,7 +40,7 @@
 
 ![Decoration Light](https://github.com/ZipeStudio/fast-recipe/blob/master/img/separator_sprite.png?raw=true)
 
-![Showcase](https://github.com/ZipeStudio/fast-recipe/blob/master/img/showcase.webp?raw=true)
+![Showcase](https://github.com/ZipeStudio/fast-recipe/blob/master/img/showcase.gif?raw=true)
 
 !["Support" Title](https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/ZSsupport.png?raw=true)
 

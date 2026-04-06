@@ -2,7 +2,7 @@ package me.zipestudio.fastrecipe.entrypoint;
 
 //? if fabric {
 
-/*import me.zipestudio.fastrecipe.FSServer;
+import me.zipestudio.fastrecipe.FSServer;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -14,9 +14,9 @@ public class CommonEntrypoint implements ModInitializer {
 	}
 }
 
-*///?} elif neoforge {
+//?} elif neoforge {
 
-import me.zipestudio.fastrecipe.FSServer;
+/*import me.zipestudio.fastrecipe.FSServer;
 import net.neoforged.fml.common.Mod;
 
 @Mod(FSServer.MOD_ID)
@@ -28,7 +28,7 @@ public class CommonEntrypoint {
 
 }
 
-//?} elif forge {
+*///?} elif forge {
 /*import me.zipestudio.fastrecipe.FSServer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
