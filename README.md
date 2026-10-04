@@ -25,7 +25,7 @@
           <a href="https://t.me/zipeleaf">
             <img src="https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/telegram.png?raw=true" title="Telegram channel">
           </a>
-          <a href="https://ko-fi.com/zipestudio/tip">
+          <a href="https://www.patreon.com/cw/ZipeStudio/membership">
             <img src="https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/support.png?raw=true" title="Support me (thx)">
           </a>
         </div>
@@ -38,9 +38,16 @@
 
 **Fast Recipe** is a Client-side mod that adds quick crafting in the recipe book. Press [Ctrl + LMB] on a recipe to craft it instantly.
 
-![Decoration Light](https://github.com/ZipeStudio/fast-recipe/blob/master/img/separator_sprite.png?raw=true)
+### Showcase
+<img src="https://github.com/ZipeStudio/fast-recipe/blob/master/assets/showcase.gif?raw=true" width="100%" alt="showcase">
 
-![Showcase](https://github.com/ZipeStudio/fast-recipe/blob/master/img/showcase.gif?raw=true)
+!["Compatibility" Title](https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/ZScompatible.png?raw=true)
+
+- **Fabric**: 1.17, 1.18.2, 1.19.2, 1.19.4, 1.20.1, 1.20.4, 1.21.1, 1.21.4, 1.21.11, 26.1
+- **NeoForge**: 1.21.1, 1.21.4, 1.21.11, 26.1
+- **Forge**: 1.20.1
+
+The mod is client-side only and works on any server. Fabric API is required on Fabric.
 
 !["Support" Title](https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/ZSsupport.png?raw=true)
 
@@ -58,4 +65,6 @@ Yeah, you got it right. Just by advertising, you will support the mod and the cr
 
 !["Licensing" Title](https://github.com/ZipeStudio/Vault/blob/main/design/mods/main/ZSlicensing.png?raw=true)
 
-### [See the original mod repository](https://github.com/ZipeStudio/fast-recipe)
+The license terms for this project are defined in the [LICENSE](https://github.com/ZipeStudio/fast-recipe/blob/master/LICENSE.md) file in this repository. That file always takes precedence over any license shown anywhere else.
+
+[**See the original mod repository**](https://github.com/ZipeStudio/fast-recipe)

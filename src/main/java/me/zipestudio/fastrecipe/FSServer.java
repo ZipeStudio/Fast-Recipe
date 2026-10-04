@@ -1,7 +1,5 @@
 package me.zipestudio.fastrecipe;
 
-import net.minecraft.network.chat.*;
-import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

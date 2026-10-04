@@ -11,7 +11,6 @@ import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.RecipeBookMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
@@ -57,13 +56,21 @@ public class FSClient {
                 return;
             }
 
-            manager.handleInventoryMouseClick(player.containerMenu.containerId, 0, 0, ClickType.QUICK_MOVE, player);
+            //? if >=26.1 {
+            manager.handleContainerInput(player.containerMenu.containerId, 0, 0, net.minecraft.world.inventory.ContainerInput.QUICK_MOVE, player);
+            //?} else {
+            /*manager.handleInventoryMouseClick(player.containerMenu.containerId, 0, 0, net.minecraft.world.inventory.ClickType.QUICK_MOVE, player);
+            *///?}
             FSClient.setWaitingResult(null);
         };
     }
 
     public static boolean canStartWaiting(List<Item> waitingResult) {
+        //? if >=26.2 {
+        /*Screen currentScreen = Minecraft.getInstance().gui.screen();
+        *///?} else {
         Screen currentScreen = Minecraft.getInstance().screen;
+        //?}
         if (!(currentScreen instanceof InventoryScreen || currentScreen instanceof CraftingScreen)) {
             return false;
         }
